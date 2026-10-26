@@ -7,7 +7,7 @@ function s.initial_effect(c)
 	c:EnableCounterPermit(0x581)
 	--fusion material
 	c:EnableReviveLimit()
-	Fusion.AddProcMixN(c,true,true,aux.FilterBoolFunctionEx2(Card.IsDrone),2)
+	Fusion.AddProcMixRep(c,true,true,aux.FilterBoolFunctionEx2(Card.IsDrone),2,99)
 	--counter
 	local e1=Effect.CreateEffect(c)
 	e1:SetDescription(aux.Stringid(3070049,0))
